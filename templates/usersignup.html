@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head>
+    <title>Signup</title>
+    <link href = "/style.css" type = "text/css" rel = "stylesheet"/>
+    </head>
+        <body>
+            <form action "" method= 'POST' >
+                <label for= "Username">Username</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type ="text" name="Username" value = '{{Username}}'> <br/>
+                <p class = 'err'>{{username_err}}</p>
+                <label for="password">Password</label> &nbsp; &thinsp; &thinsp; &thinsp; &thinsp; &thinsp;
+                    <input type = "password" name = 'Password' value = '{{password}}'> <br/>
+                <p class ='err'>{{password_err}} </p>
+                <label for="Verify_Password">Verify Password</label>
+                    <input type= "password" name = "Verify_Password" > <br/>
+                <p class= 'err'>{{password_verify_err}}</p>
+                <label for="Email">Email (optional)</label>
+                    <input type= "text" name = "Email" value = '{{email}}'> <br/>
+                <p class = 'err'>{{email_err}}</p>
+                <input type="Submit">
+
+            </form>
+        </body>
+</html>
+
